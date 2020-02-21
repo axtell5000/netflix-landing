@@ -1,6 +1,7 @@
 
 /* Variables */
 :root {
+	--dark-color: #141414;
 	--primary-color: #e50914;
 }
 
@@ -105,6 +106,50 @@ img {
 	line-height: 1.25;
 	margin: 0 0 2rem;
 	text-transform: uppercase;
+}
+
+/* Tab section */
+.tabs {
+	background: var(--dark-color);
+	border-bottom: 3px solid #3d3d3d;
+	padding-top: 1rem;
+}
+
+.tabs .container {
+	align-items: center;
+	display: grid;
+	gap: 0 1rem;
+	grid-template-columns: repeat(3, 1fr);
+	justify-content: center;
+	text-align: center;
+}
+
+.tabs p {
+	font-size: 1.2rem;
+	padding-top: 0.5rem;
+}
+
+.tabs .container > div {
+	padding: 1.5rem 0;
+}
+
+.tabs .container > div:hover,
+.tabs .container > div:focus {
+	color: #ffffff;
+	cursor: pointer;
+}
+
+.tab-border {
+	border-bottom: 4px solid var(--primary-color);
+}
+
+/* Containers */
+
+.container {
+	margin: auto;
+	max-width: 70%;
+	overflow: hidden;
+	padding: 0 2rem;
 }
 
 /* Buttons*/
