@@ -1,0 +1,144 @@
+
+/* Variables */
+:root {
+	--primary-color: #e50914;
+}
+
+/* Base styles */
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background: #000000;
+	color: #999999;
+	font-family: Arial, Helvetica, sans-serif;
+	-webkit-font-smoothing: antialiased; /* not standard */
+}
+
+ul {
+	list-style: none;
+}
+
+h1, h2, h3, h4 {
+	color: #ffffff;
+}
+
+a {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+p {
+	margin: 0.5rem 0;
+}
+
+img {
+	width: 100%;
+}
+
+.showcase {
+	background: url('../img/background.jpg') no-repeat center center/cover;
+	height: 93vh;
+	position: relative;
+	width: 100%;
+}
+
+.showcase::after {
+	background: rgba(0, 0, 0, 0.6);
+	box-shadow: inset 120px 100px 250px #000000, inset -120px -100px 250px #000000;
+	content: '';
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+.showcase-top {
+	height: 90px;
+	position: relative;
+	z-index: 2;
+}
+
+.showcase-top img {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 170px;
+}
+
+.showcase-top a {
+	position: absolute;
+	top: 50%;
+	right: 0;
+	transform: translate(-50%, -50%);
+}
+
+.showcase-content {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin: 9rem auto 0 auto;
+	position: relative;
+	text-align: center;
+	z-index: 2;
+}
+
+.showcase-content h1 {
+	font-size: 5.2rem;
+	font-weight: 700;
+	line-height: 1.1;
+	margin: 0 0 2rem;
+}
+
+.showcase-content p {
+	color: #ffffff;
+	font-size: 1.9rem;
+	font-weight: 400;
+	line-height: 1.25;
+	margin: 0 0 2rem;
+	text-transform: uppercase;
+}
+
+/* Buttons*/
+.btn {
+	background: var(--primary-color);
+	border: none;
+	border-radius: 2px;
+	box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+	color: #ffffff;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 1rem;
+	margin-right:0.5rem;
+	outline: none;
+	padding: 0.4rem 1.3rem;
+	text-align: center;
+}
+
+.btn:hover, .btn:focus {
+	opacity: 0.9;
+}
+
+.btn-rounded {
+	border-radius: 5px;
+}
+
+.btn-xl {
+	font-size: 2rem;
+	padding: 1.5rem 2.1rem;
+	text-transform: uppercase;
+}
+
+.btn-lg {
+	font-size: 1rem;
+	padding: 0.8rem 1.3rem;
+	text-transform: uppercase;
+}
