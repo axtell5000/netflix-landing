@@ -143,6 +143,22 @@ img {
 	border-bottom: 4px solid var(--primary-color);
 }
 
+/* For tabs content */
+
+.tab-content {
+	background: #000000;
+	color: #ffffff;
+	padding: 3rem 0;
+}
+
+#tab-1-content .tab-1-content-inner {
+	align-items: center;
+	display: grid;
+	gap: 2rem;
+	grid-template-columns: repeat(2, 1fr);
+	justify-content: center;
+}
+
 /* Containers */
 
 .container {
@@ -150,6 +166,25 @@ img {
 	max-width: 70%;
 	overflow: hidden;
 	padding: 0 2rem;
+}
+
+/* Text styling */
+.text-xl {	
+	font-size: 2rem;
+	margin-bottom: 1rem;
+}
+
+.text-lg {	
+	font-size: 1.8rem;
+	margin-bottom: 1rem;
+}
+
+.text-align {
+	text-align: center;
+}
+
+.text-dark {
+	color: #999999;
 }
 
 /* Buttons*/
